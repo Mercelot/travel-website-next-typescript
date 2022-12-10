@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
+import HeroSection from "../components/HeroSection";
 
 export default function Home() {
     return (
@@ -9,7 +10,7 @@ export default function Home() {
         <script src="https://kit.fontawesome.com/b5de23c602.js" crossOrigin="anonymous"></script>
           <title></title>
       </Head>
-      <Navbar/>
+      <Navbar/><HeroSection/>
     </div>
   )
 }

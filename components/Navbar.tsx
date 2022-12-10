@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from '../styles/Navbar.module.scss'
 import Link from 'next/link'
 import Button from './Button';
+import Icon from './Icon'
 
 export default function Navbar() {
 
@@ -32,9 +33,7 @@ export default function Navbar() {
     <>
       <nav className={styles.navbar}>
         <div className={styles.navbar_container}>
-          <Link href='/' className={styles.navbar_logo} onClick={closeMobileMenu}>
-            ESCP <i className="fa-solid fa-earth-americas"></i>
-          </Link>
+          <Icon onclick={closeMobileMenu}/>
           <div className={styles.menu_icon} onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>

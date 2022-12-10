@@ -17,7 +17,7 @@ export default function Button({style, size, content, onclick}: ButtonProps) {
 
     return (
         <Link href='/sign-up' className='btn-mobile'>
-            <button className={`${classSizes} ${classNames}`} onClick={onclick}>{content}</button>
+            <button className={`btn ${classSizes} ${classNames}`} onClick={onclick}>{content}</button>
         </Link>
     )
 }
